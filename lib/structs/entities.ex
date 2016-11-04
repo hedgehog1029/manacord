@@ -15,7 +15,7 @@ defmodule Manacord.Entity.GuildMember do
 end
 
 defmodule Manacord.Entity.Emoji do
-	defstruct [:id, :name, {:roles, [%Manacord.Entity.Role{}]}, :require_colons, :managed]
+	defstruct [:id, :name, {:roles, []}, :require_colons, :managed]
 end
 
 defmodule Manacord.Entity.Channel do
